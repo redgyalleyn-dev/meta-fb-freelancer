@@ -1,0 +1,116 @@
+@media screen and (max-width: 700px) {
+    .container_confirm .form {
+        width: 85% !important;
+
+    }
+
+    .container_confirm .input_code {
+        width: 46% !important;
+    }
+
+    .container_confirm .footer_form .footer_form-title {
+        width: 60% !important;
+    }
+}
+
+.container_confirm {
+    padding-bottom: 50px;
+    background-color: white;
+    height: 800px;
+}
+
+.container_confirm .header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 72px;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+}
+
+.container_confirm .logo a img {
+    width: 130px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.container_confirm .content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_confirm .form {
+    width: 44%;
+    height: auto;
+    margin-top: 100px;
+    border: 1px solid #e9ebee;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.container_confirm .title {
+    width: 100%;
+    height: 54px;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    border-bottom: 1px solid #e9ebee;
+}
+
+.container_confirm .text_content {
+    width: 95%;
+    margin: auto;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4b4f56;
+    line-height: 1.5;
+}
+
+.container_confirm .footer_form {
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    margin-top: 20px;
+    border-top: 1px solid #e9ebee;
+    color: #385898;
+    position: relative;
+}
+
+
+
+.container_confirm .footer_form .footer_form-title:hover {
+    cursor: pointer;
+}
+
+.container_confirm .submit {
+    background-color: #385898;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    height: 36px;
+}
+
+.container_confirm .input_code {
+    width: 26%;
+}

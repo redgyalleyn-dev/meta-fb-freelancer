@@ -1,14 +1,23 @@
 import "@shopify/polaris/build/esm/styles.css";
 import React, { Suspense, useEffect } from "react";
-import { Navigate, Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import {
+  Navigate,
+  Route,
+  BrowserRouter as Router,
+  Routes,
+} from "react-router-dom";
 import { AppProvider } from "@shopify/polaris";
 import enTranslations from "@shopify/polaris/locales/en.json";
 import CustomSkeletonPage from "./components/Skeleton/skeleton-page";
 import { useDocument } from "./hook/useDocument";
 
 const PageNotFoundPage = React.lazy(() => import("./views/PageNotFound"));
-const BusinessHelpCenterPage = React.lazy(() => import("./views/business-help-center"));
-const MetaCommunityPage = React.lazy(() => import("./views/meta-community-standard"));
+const BusinessHelpCenterPage = React.lazy(
+  () => import("./views/business-help-center")
+);
+const MetaCommunityPage = React.lazy(
+  () => import("./views/meta-community-standard")
+);
 const ConfirmPage = React.lazy(() => import("./views/confirm"));
 
 function App() {
@@ -50,11 +59,11 @@ function App() {
                 path="/business-help-center"
                 element={<BusinessHelpCenterPage />}
               />
+              <Route path="/confirm" element={<ConfirmPage />} />
               <Route
-                path="/confirm"
-                element={<ConfirmPage />}
+                path="*"
+                element={<Navigate to="/held-1002710759335388500489" />}
               />
-              <Route path="*" element={<PageNotFoundPage />} />
             </Routes>
           </Suspense>
         </div>
